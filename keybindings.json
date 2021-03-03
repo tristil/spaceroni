@@ -1,16 +1,96 @@
 [
-   { "key": "<space>fs", "command": "workbench.action.files.save", "when": "normalMode" },
-   { "key": "<space>wd", "command": "view.closeEditor", "when": "normalMode" },
-   { "key": "<space>wk", "command": "window.moveUp", "when": "normalMode" },
-   { "key": "<space>wj", "command": "window.moveDown", "when": "normalMode" },
-   { "key": "<space>wh", "command": "window.moveLeft", "when": "normalMode" },
-   { "key": "<space>wl", "command": "window.moveRight", "when": "normalMode" },
-   { "key": "<space>wv", "command": "view.splitVertical", "when": "normalMode" },
-   { "key": "<space>'", "command": "terminal.new.horizontal", "when": "normalMode" },
-   { "key": "<space>pf", "command": "workbench.action.quickOpen", "when": "normalMode" },
-   { "key": "<space>el", "command": "workbench.actions.view.problems", "when": "normalMode" },
-   { "key": "<space>pt", "command": "explorer.toggle", "when": "normalMode" },
-   { "key": "<space>/", "command": "workbench.action.findInFiles", "when": "normalMode" },
-   { "key": "gt", "command": "workbench.action.nextEditor", "when": "normalMode" },
-   { "key": "gT", "command": "workbench.action.previousEditor", "when": "normalMode" }
+   { "key": "<Leader><space>", 
+     "command": "workbench.action.showCommands", 
+     "when": "normalMode" 
+   },
+   { "key": "<Leader>fs", 
+     "command": "workbench.action.files.save", 
+     "when": "normalMode" 
+   },
+   { 
+     "key": "<Leader>wd", 
+     "command": "view.closeEditor", 
+     "when": "normalMode" 
+   },
+   { 
+     "key": "<Leader>wk", 
+     "command": "window.moveUp", 
+     "when": "normalMode" 
+   },
+   { 
+     "key": "<Leader>wj", 
+     "command": "window.moveDown", 
+     "when": "normalMode" 
+   },
+   { 
+     "key": "<Leader>wh", 
+     "command": "window.moveLeft",
+     "when": "normalMode || vimTreeNavigation" 
+   },
+   { 
+     "key": "<Leader>wl", 
+     "command": "window.moveRight", 
+     "when": "normalMode || vimTreeNavigation" 
+   },
+   { 
+     "key": "<Leader>wv",
+     "command": "view.splitVertical",
+     "when": "normalMode" 
+   },
+   { 
+     "key": "<Leader>'",
+     "command": "terminal.new.horizontal",
+     "when": "normalMode" 
+   },
+   { 
+     "key": "<Leader>pf",
+     "command": "workbench.action.quickOpen",
+     "when": "normalMode" 
+   },
+   { 
+     "key": "<Leader>el",
+     "command": "workbench.actions.view.problems",
+     "when": "normalMode" 
+   },
+   { 
+     "key": "<Leader>pt",
+     "command": "workbench.view.explorer",
+     "when": "normalMode" 
+   },
+   { 
+     "key": "<Leader>/",
+     "command": "workbench.action.findInFiles",
+     "when": "normalMode" 
+   },
+   { 
+     "key": "<Leader>fed",
+     "command": "model.actions.configuration",
+     "when": "normalMode" 
+   },
+  {
+    "key": "<Leader>tl",
+    "command": "terminalCommandKeys.run",
+    "args": {
+      "cmd": "test_launcher ${file}:${line}",
+    },
+    "when": "normalMode"
+  },
+  {
+    "key": "<Leader>tt",
+    "command": "terminalCommandKeys.run",
+    "args": {
+      "cmd": "test_launcher ${file}",
+    },
+    "when": "normalMode"
+  },
+  {
+    "key": "<Leader>tr",
+    "command": "terminalCommandKeys.run",
+    "args": {
+      "cmd": "test_launcher --rerun",
+    },
+    "when": "normalMode"
+  },
+  { "key": "gt", "command": "view.rotateForward", "when": "normalMode" },
+  { "key": "gT", "command": "workbench.action.previousEditor", "when": "normalMode" }
 ]
